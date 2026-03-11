@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Reflection.Metadata;
+using System.Runtime.Intrinsics.X86;
 
 namespace G_NET_27_OOP_6
 {
@@ -65,6 +67,38 @@ namespace G_NET_27_OOP_6
 
             #endregion
 
+            #region Q4
+            //(A) =>
+            // A partial class allows you to split a single class definition across multiple files,
+            // And the Compiler merge them.
+            // Why to used 
+            //  Organize large classes=>Split properties, methods, events into separate files.
+            // Allow multiple developers work on the same class .
+            // Tools auto-generate one file, you customize in another
+
+            // (B) =>
+            //  A partial method is declared in one part of a partial class and optionally implemented in another part.
+            // Yes, the code will still compile. Because OnCalculated() is a partial method — if the implementation is deleted,
+            // the compiler automatically removes the call to it with no errors.
+
+            // (C) => 
+            // An extension method lets you add new methods to an existing type without modifying its source code.
+            // The class must be static
+            // The method must be static
+            // The first parameter must use the this keyword followed by the type you're extending.
+
+
+            //(D)=>
+
+            // Calculator calc = new Calculator();
+            //double result = calc.Add(19.5, 0.5);
+            //Console.WriteLine(result.ToCurrency()); ===>
+            //the output ...>
+            // Log : Result = 20 
+            // $20.00
+
+
+            #endregion
         }
     }
 }
