@@ -30,6 +30,27 @@ namespace G_NET_27_OOP_6
 
             #endregion
 
+            #region Q2
+            //                                Abstract Class    VS     Interface 
+            // Multiple inheritance needed        (✔)                  (❌)
+            // Loose coupling / extensibility     (✔)                  (❌)
+            // Shared implementation required     (❌)                  (✔)
+            // Represents an "is-a" hierarchy     (❌)                  (✔)
+            // Has constructors / fields          (❌)                  (✔)
+
+            //When use Abstraction 
+            // Behavior may change
+            // Multiple implementations
+            // Loose coupling needed
+            // Testability
+
+            // When to use interface
+            // You need multiple inheritance.
+            // You want to define a pure contract with no shared state.
+            // Unrelated classes need to share behaviour.
+
+            #endregion
+
         }
     }
 }
