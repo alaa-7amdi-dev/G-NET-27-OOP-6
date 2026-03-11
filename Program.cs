@@ -51,6 +51,20 @@ namespace G_NET_27_OOP_6
 
             #endregion
 
+            #region Q3
+            //  (a)   No, because an object cannot be created from an abstract class.
+            //  (b)
+            // PowerConsumption() => type of Abstract method , you must make Override to it impelr=ementation, because
+            //  it has return type and access modifier (public).
+            // Status() => type of dynamic Polyemorphism . you can make Override or ont as you like .
+            // Label() => is a concrete method , when you inherits the class ,the child can't modify it.
+
+            // (c)  Toaster toasr = new Toaster("Mvg")
+            // toasr.Status(); ====>  Standby 
+            // Because that object cannot perform An Override in the inherits method, and inherits the impelementation in the Parent.
+
+            #endregion
+
         }
     }
 }
